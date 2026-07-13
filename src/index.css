@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Force sharp corners globally across the whole application, including Tailwind components */
+* {
+  border-radius: 0 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+}
