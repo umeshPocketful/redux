@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment, reset } from '../store/counter/counterSlice';
+import { decrement, increment, reset, incrementAsync } from '../store/counter/counterSlice';
 
 function Counter() {
   const count = useSelector((state) => state.counter.value);
@@ -15,7 +15,7 @@ function Counter() {
 
       <div className={styles.interactivePanel}>
         <p className={styles.title}>
-         {count}
+          {count}
         </p>
         <div className={styles.btnContainer}>
           <button className={styles.btn} onClick={() => dispatch(increment())}>
@@ -26,6 +26,9 @@ function Counter() {
           </button>
           <button className={styles.btn} onClick={() => dispatch(reset())}>
             Reset
+          </button>
+          <button className={styles.btn} onClick={() => dispatch(incrementAsync({val1: 333, val2: 100}))}>
+            Increment Async
           </button>
         </div>
       </div>

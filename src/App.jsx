@@ -122,7 +122,7 @@ const styles = {
   tabActive: "text-[#37352f] dark:text-neutral-200 bg-white dark:bg-[#191919] !border-b-transparent font-medium",
   tabClose: "text-[10px] text-[#7c7b77] dark:text-neutral-400 opacity-60 hover:opacity-100 ml-1",
   activeScreen: "flex-1 p-6 overflow-y-auto text-sm",
-  statusBar: "flex items-center justify-between h-[22px] bg-sky-600 text-white px-3 text-[11px] font-mono select-none",
+  statusBar: "flex items-center justify-between h-[22px] bg-neutral-600 text-white px-3 text-[11px] font-mono select-none",
   statusBarItem: "flex items-center gap-1.5"
 }
 
